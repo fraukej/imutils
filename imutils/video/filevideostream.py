@@ -62,3 +62,4 @@ class FileVideoStream:
 	def stop(self):
 		# indicate that the thread should be stopped
 		self.stopped = True
+		self.stream.release()
